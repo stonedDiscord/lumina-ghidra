@@ -41,6 +41,8 @@ jobs:
     - name: Install Python requirements
       run: |
         pip install -r requirements.txt
+        ls
+        ls Ghidrathon
         pip install -r Ghidrathon/util/requirements.txt
         pip install -r Ghidrathon/data/python/tests/requirements.txt
         python -c "import importlib.util;import pathlib;print(pathlib.Path(importlib.util.find_spec('jep').origin).parent)"
